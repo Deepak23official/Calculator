@@ -44,12 +44,11 @@
     </div>
 
     <script>
-        let userInput = document.getElementById('Input')
-        const display =((num)=>userInput.value +=num )
-        const Clear = (()=>{userInput.value = ""})
-        const tatal = ()=>{userInput.value = eval(userInput.value)}
-        const Del = ()=>userInput.value = userInput.value.slice(0,-1)
-
+        let userInput = document.getElementById('Input')   //get user data using DOM
+        const display =((num)=>userInput.value +=num )     //Declare arrow function add parameter value on user input 
+        const Clear = (()=>{userInput.value = ""})         //Create a function for clear button
+        const tatal = ()=>{userInput.value = eval(userInput.value)}  //create button for calculte all value using eval function
+        const Del = ()=>userInput.value = userInput.value.slice(0,-1) //Remove value from user input 1 by 1
     </script>
 
 </body>
